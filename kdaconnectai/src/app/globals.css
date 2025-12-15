@@ -3,20 +3,25 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans text-gray-800 bg-ash;
+  @apply font-sans text-gray-700 bg-white;
 }
 
 h1, h2, h3, h4 {
-  @apply font-bold text-black;
+  @apply font-bold text-gray-900;
 }
 
 a {
-  @apply text-gray-800 hover:text-gray-600 transition;
+  @apply text-blue-600 hover:text-blue-800 transition;
 }
 
-/* Remove all animations that feel "AI-generated" */
-* {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition: none !important;
+.btn-primary {
+  @apply bg-blue-600 text-white px-6 py-3 font-semibold rounded-lg hover:bg-blue-700 transition;
+}
+
+.btn-secondary {
+  @apply border-2 border-blue-600 text-blue-600 px-6 py-3 font-semibold rounded-lg hover:bg-blue-50 transition;
+}
+
+.btn-outline {
+  @apply border-2 border-gray-300 text-gray-700 px-6 py-3 font-semibold rounded-lg hover:bg-gray-50 transition;
 }
