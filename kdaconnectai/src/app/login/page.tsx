@@ -1,7 +1,11 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function LoginPage() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center py-12 px-4">
       <div className="w-full max-w-md">
@@ -66,7 +70,7 @@ export default function LoginPage() {
 
             <button
               type="button"
-              onClick={() => alert("Demo Login - Redirecting to dashboard...")}
+              onClick={() => router.push("/dashboard/player")}
               className="btn-primary w-full mt-6"
             >
               Sign In
@@ -87,10 +91,18 @@ export default function LoginPage() {
 
           {/* Social Login */}
           <div className="grid grid-cols-2 gap-4">
-            <button type="button" className="btn-outline">
+            <button
+              type="button"
+              onClick={() => router.push("/dashboard/player")}
+              className="btn-outline"
+            >
               Google
             </button>
-            <button type="button" className="btn-outline">
+            <button
+              type="button"
+              onClick={() => router.push("/dashboard/player")}
+              className="btn-outline"
+            >
               Apple
             </button>
           </div>

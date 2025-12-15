@@ -1,7 +1,17 @@
 // app/players/[id]/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PlayerProfile({ params }: { params: { id: string } }) {
+  const images = [
+    "portrait-young-man-playing-football.webp",
+    "young-man-playing-football.webp",
+    "view-male-soccer-player-ready-match.webp",
+    "view-adult-male-soccer-player.webp",
+    "portrait-football-player-with-ball.webp",
+  ];
+  const idx = Math.max(0, (Number(params.id) - 1) % images.length);
+  const photo = images[idx];
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8">
@@ -16,8 +26,14 @@ export default function PlayerProfile({ params }: { params: { id: string } }) {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-start gap-6 mb-8">
-              <div className="bg-gray-200 w-32 h-32 rounded-full flex items-center justify-center">
-                [Photo]
+              <div className="w-32 h-32 rounded-full overflow-hidden">
+                <Image
+                  src={`/Image/${photo}`}
+                  alt="player photo"
+                  width={128}
+                  height={128}
+                  className="object-cover"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -32,9 +48,14 @@ export default function PlayerProfile({ params }: { params: { id: string } }) {
             </div>
 
             <div className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Highlight Video</h2>
-              <div className="bg-gray-200 aspect-video flex items-center justify-center text-gray-500">
-                YouTube Embed
+              <h2 className="text-2xl font-bold mb-4">Highlight</h2>
+              <div className="bg-gray-200 aspect-video relative overflow-hidden rounded">
+                <Image
+                  src={`/Image/${photo}`}
+                  alt="highlight"
+                  fill
+                  className="object-cover opacity-90"
+                />
               </div>
             </div>
 
@@ -91,10 +112,10 @@ export default function PlayerProfile({ params }: { params: { id: string } }) {
                 Sign up or log in to contact this player.
               </p>
               <Link
-                href="/signup"
-                className="w-full block bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition"
+                href="/dashboard/player"
+                className="w-full block btn-primary text-center py-2 rounded"
               >
-                Sign Up to Contact
+                Contact Player
               </Link>
             </div>
           </div>

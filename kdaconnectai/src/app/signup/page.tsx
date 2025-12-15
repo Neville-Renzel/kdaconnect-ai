@@ -1,7 +1,11 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function SignupPage() {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white py-12 px-4">
       <div className="w-full max-w-4xl mx-auto">
@@ -53,7 +57,7 @@ export default function SignupPage() {
             </ul>
             <button
               type="button"
-              onClick={() => alert("Player Registration Form - Coming Soon")}
+              onClick={() => router.push("/dashboard/player")}
               className="btn-primary w-full"
             >
               Continue as Player
@@ -91,7 +95,7 @@ export default function SignupPage() {
             </ul>
             <button
               type="button"
-              onClick={() => alert("Scout Registration Form - Coming Soon")}
+              onClick={() => router.push("/dashboard/scout")}
               className="btn-primary w-full"
             >
               Continue as Scout
@@ -194,9 +198,7 @@ export default function SignupPage() {
 
             <button
               type="button"
-              onClick={() =>
-                alert("Account Created! Redirecting to dashboard...")
-              }
+              onClick={() => router.push("/dashboard/player")}
               className="btn-primary w-full"
             >
               Create Account
