@@ -1,4 +1,5 @@
 // app/contact/page.tsx
+"use client";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
