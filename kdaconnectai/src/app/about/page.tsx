@@ -65,6 +65,28 @@ export default function About() {
           </ul>
         </section>
 
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-blue-600">Founder</h2>
+          <div className="flex flex-col md:flex-row items-center bg-gray-50 p-8 rounded-lg">
+            <Image
+              src="/Image/founder.webp"
+              alt="Mike Ogbole"
+              width={150}
+              height={150}
+              className="rounded-full mr-8 mb-4 md:mb-0"
+            />
+            <div>
+              <h3 className="text-xl font-bold text-gray-900">Mike Ogbole — Founder & CEO</h3>
+              <p className="text-gray-700 mt-2">
+                Former professional footballer with firsthand experience of the challenges players face in gaining visibility, securing trials, and navigating international football pathways.
+              </p>
+              <p className="text-gray-700 mt-2">
+                Built KDAconnect AI to solve the discovery gap using technology and data-driven scouting.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="mb-16 bg-blue-50 p-8 rounded-lg border-2 border-blue-200">
           <h2 className="text-2xl font-bold mb-6 text-blue-600">Contact Us</h2>
           <p>Email: info@kdaconnect.ai</p>

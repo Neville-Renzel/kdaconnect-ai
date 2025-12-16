@@ -10,11 +10,10 @@ export default function Home() {
         <div className="container mx-auto px-4 py-32">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-              Connecting relentless talent to opportunity
+              AI-Powered Football Talent Discovery Platform
             </h1>
             <p className="text-xl mb-8 text-blue-100">
-              KDAconnect AI is the trusted platform where amateur and semi-pro
-              footballers get discovered by clubs, scouts, and agents worldwide.
+              KDAconnect AI connects undiscovered football talent with clubs, scouts, and agents worldwide using intelligent data matching and performance analysis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -42,12 +41,129 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Players */}
+      {/* The Problem */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">The Problem</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Millions of talented football players, especially from Africa and emerging markets, remain undiscovered due to limited access to scouts, high trial costs, and inefficient scouting systems.
+          </p>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Clubs and scouts also struggle with fragmented data, unreliable trials, and expensive talent discovery processes.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Solution */}
       <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4">
-            Featured Players
-          </h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Our Solution</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            KDAconnect AI is a digital scouting marketplace that uses artificial intelligence to analyze player data, performance metrics, and video content to intelligently match players with suitable clubs, scouts, and agents.
+          </p>
+        </div>
+      </section>
+
+      {/* How KDAconnect AI Works */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">How KDAconnect AI Works</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">AI-driven player profiling and performance analysis</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Intelligent matching between player attributes and club needs</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Centralized, verified talent database</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Reduced scouting time and cost for clubs</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-20 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12">Who We Serve</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-blue-600">For Players</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Create verified football profiles</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Upload match videos and performance data</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Get discovered globally without expensive trials</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-blue-600">For Scouts, Agents & Clubs</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Access a global talent pool</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Use smart filters and AI recommendations</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-3 font-bold text-xl">✓</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">Reduce scouting risk and cost</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Players */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-4">Featured Players</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Discover emerging talent from across the globe. These are some of
             our top players ready for their next opportunity.
