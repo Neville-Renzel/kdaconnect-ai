@@ -18,7 +18,7 @@ export default function PricingPlayers() {
           <div className="border border-gray-200 rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-2">Free</h2>
             <p className="text-3xl font-bold mb-4">
-              $0<span className="text-lg font-normal">/month</span>
+              €0<span className="text-lg font-normal">/month</span>
             </p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">
@@ -56,7 +56,7 @@ export default function PricingPlayers() {
             </div>
             <h2 className="text-2xl font-bold mb-2">Premium</h2>
             <p className="text-3xl font-bold mb-4">
-              $9.99<span className="text-lg font-normal">/month</span>
+              €9.99<span className="text-lg font-normal">/month</span>
             </p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">
@@ -92,7 +92,7 @@ export default function PricingPlayers() {
           <div className="border border-gray-200 rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-2">Pro</h2>
             <p className="text-3xl font-bold mb-4">
-              $19.99<span className="text-lg font-normal">/month</span>
+              €19.99<span className="text-lg font-normal">/month</span>
             </p>
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">

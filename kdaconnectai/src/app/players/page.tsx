@@ -1,5 +1,6 @@
 // app/players/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 export default function BrowsePlayers() {
   return (
@@ -54,16 +55,30 @@ export default function BrowsePlayers() {
 
         {/* Player Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+          {[
+            "/image2/Screenshot 2025-12-17 160004.webp",
+            "/image2/Screenshot 2025-12-17 160149.webp",
+            "/image2/Screenshot 2025-12-17 160203.webp",
+            "/image2/Screenshot 2025-12-17 160217.webp",
+            "/image2/Screenshot 2025-12-17 160259.webp",
+            "/image2/Screenshot 2025-12-17 160313.webp",
+            "/image2/Screenshot 2025-12-17 160327.webp",
+            "/image2/Screenshot 2025-12-17 160352.webp",
+          ].map((src, i) => (
             <div
               key={i}
               className="border-2 border-blue-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition bg-white"
             >
-              <div className="bg-blue-100 h-40 flex items-center justify-center text-blue-400 font-semibold">
-                Player {i} Highlight
+              <div className="relative h-40">
+                <Image
+                  src={src}
+                  alt={`Player ${i + 1} Highlight`}
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
               <div className="p-4">
-                <h3 className="font-bold text-gray-900">Player {i}</h3>
+                <h3 className="font-bold text-gray-900">Player {i + 1}</h3>
                 <p className="text-blue-600 text-sm">Position • Country</p>
                 <p className="text-xs text-green-600 mt-1 font-semibold">
                   ✓ Verified Profile
